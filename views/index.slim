@@ -1,0 +1,7 @@
+ul
+  - @days.each do |day|
+    li
+      - unless day == 'today'
+        a href="/archives/day/#{day}" #{day}
+      - else
+        a href="/archives/today" today

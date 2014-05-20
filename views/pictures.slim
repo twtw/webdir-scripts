@@ -1,0 +1,6 @@
+- @pics.each do |pic|
+  - if @day == 'today'
+    -url = "/truelove/today/#{pic}"
+  - else
+    - url = "/truelove/#{@day}/#{@hr}/#{pic}"
+  img [src=url title=pic]
